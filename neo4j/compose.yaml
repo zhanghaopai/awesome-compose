@@ -1,0 +1,16 @@
+services:
+  neo4j:
+    image: neo4j:5.9.0-community
+    container_name: neo4j
+    ports:
+      - 7474:7474
+      - 7687:7687
+    volumes:
+      - ./conf:/var/lib/neo4j/conf
+      - ./import:/var/lib/neo4j/import
+      - ./plugins:/plugins
+      - ./data:/data
+      - ./logs:/var/lib/neo4j/logs
+    restart: always
+    environment:
+      - NEO4J_AUTH=neo4j/0123456789

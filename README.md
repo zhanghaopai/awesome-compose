@@ -92,6 +92,11 @@ deploying samples of containerized applications with Docker Compose.
     [Docker Compose](https://github.com/docker/compose)
 - Download some or all of the samples from this repository.
 
+### Docker Compose Format Specification
+- Volumes
+> [SOURCE:]TARGET[:MODE]
+
+
 ### Running a sample
 
 The root directory of each sample contains the `compose.yaml` which
